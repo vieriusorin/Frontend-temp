@@ -1,0 +1,49 @@
+body {
+  font-family: $font-primary;
+  color: $c-neutral-black;
+  line-height: $line-height-base;
+}
+
+.shadow {
+  box-shadow: 11px 12px 14px 5px rgba(88, 80, 80, .1);
+}
+
+.list-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.px-0 {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.py-0 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.img-fluid {
+  width: 100%;
+}
+
+section {
+  padding-top: 2.6666666667rem;
+  padding-bottom: 2.6666666667rem;
+
+  @media (--medium) {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  &.sect__intro {
+    padding-top: 0;
+  }
+}
+
+.wrapper {
+  square: 100px;
+  background: red;
+}

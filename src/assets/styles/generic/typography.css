@@ -1,0 +1,96 @@
+@import "https://fonts.googleapis.com/css?family=Roboto:300,400,700";
+
+$font-primary: 'Roboto', sans-serif;
+$font-secondary: serif;
+$text-base-size: 1em;
+$text-scale-ratio: 1.2;
+$line-height-base: 150%;
+
+@custom-selector :--headings h1, h2, h3, h4, h5, h6;
+
+:--headings {
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+h1,
+.text--xxl {
+  font-size: calc(24 / $base)rem;
+
+  @media (--medium) {
+    font-size: calc(36 / $base)rem;
+  }
+
+  @media (--large) {
+    font-size: calc(54 / $base)rem;
+  }
+}
+
+h2,
+.text--xl {
+  font-size: calc(24 / $base)rem;
+
+  @media (--medium) {
+    font-size: calc(36 / $base)rem;
+  }
+
+  @media (--large) {
+    font-size: calc(54 / $base)rem;
+  }
+}
+
+h3,
+.text--lg {
+  font-size: calc(16 / $base)rem;
+
+  @media (--medium) {
+    font-size: calc(24 / $base)rem;
+  }
+
+  @media (--large) {
+    font-size: calc(28 / $base)rem;
+  }
+}
+
+h4,
+.text--md {
+  font-size: calc(16 / $base)rem;
+
+  @media (--medium) {
+    font-size: calc(18 / $base)rem;
+  }
+
+  @media (--large) {
+    font-size: calc(24 / $base)rem;
+  }
+}
+
+h5,
+.text-sm {
+  font-size: calc(14 / $base)rem;
+
+  @media (--medium) {
+    font-size: calc(16 / $base)rem;
+  }
+
+  @media (--large) {
+    font-size: calc(18 / $base)rem;
+  }
+}
+
+p {
+  font-size: calc(14 / $base)rem;
+
+  @media (--medium) {
+    font-size: calc(16 / $base)rem;
+  }
+
+  @media (--large) {
+    font-size: calc(18 / $base)rem;
+  }
+
+  &:not(:last-of-type) {
+    margin-bottom: 1.5625rem;
+  }
+}

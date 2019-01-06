@@ -1,0 +1,36 @@
+.c-primary {
+  color: $c-primary !important;
+}
+
+.c-secondary {
+  color: $c-secondary !important;
+}
+
+.c-accent {
+  color: $c-accent !important;
+}
+
+.c-neutral-black {
+  color: $c-neutral-black !important;
+}
+
+.c-neutral-gray {
+  color: $c-neutral-gray !important;
+}
+
+.c-neutral-gray-d {
+  color: $c-neutral-gray-d !important;
+}
+
+.c-neutral-gray-l {
+  color: $c-neutral-gray-l !important;
+}
+
+.py-0 {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.pt-0 {
+  padding-top: 0;
+}

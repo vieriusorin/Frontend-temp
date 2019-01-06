@@ -1,0 +1,23 @@
+.btn {
+    border: 0;
+
+    &:not(.btn-link) {
+        @extend .shadow;
+    }
+
+    &-primary {
+        @add-mixin theme-primary;
+        font-weight: bold;
+        text-transform: capitalize;
+
+        .sect__intro & {
+            @media (--medium) {
+                padding: 2.5rem;
+
+                position: absolute;
+                bottom: -5rem;
+                margin-left: 12.5rem;
+            }
+        }
+    }
+}

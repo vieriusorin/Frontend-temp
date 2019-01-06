@@ -1,0 +1,40 @@
+@custom-media --extra-small (width <576px);
+@custom-media --small (width >=576px);
+@custom-media --medium (width >=768px);
+@custom-media --large (width >=992px);
+@custom-media --extra-large (width >=1200px);
+
+@custom-media --max-small (width <=575px);
+@custom-media --max-medium (width <=767px);
+@custom-media --max-large (width <=991px);
+@custom-media --max-extra-large (width <=1199px);
+
+@custom-media --small-medium (width >= 575px) and (width <= 767px);
+@custom-media --small-large (width >=575px) and (width <=992px);
+@custom-media --small-extra-large (width >=575px) and (width <=1200px);
+
+@custom-media --medium-large (width >=768px) and (width <=992px);
+@custom-media --medium-extra-large (width >=768px) and (width <=1200px);
+
+@custom-media --large-extra-large (width >=992px) and (width <=1200px);
+
+@define-mixin theme-primary {
+  color: $c-neutral-white $c-primary
+}
+
+@define-mixin theme-secondary {
+  color: $c-neutral-white $c-secondary;
+}
+
+@define-mixin theme-lighten {
+  color: $c-secondary $c-neutral-white;
+}
+
+@define-mixin pos-static {
+  position: static auto auto auto auto;
+}
+
+:matches(.btn-primary):hover,
+:matches(.btn-primary):focus {
+  background-color: color($c-primary lightness(65%)) !important;
+}

@@ -1,0 +1,15 @@
+# gitignore
+.DS_Store
+
+yarn.lock
+package-lock.json
+
+npm-debug.log
+
+.idea
+.nyc_output
+
+client
+coverage
+ssl/*.pem
+node_modules

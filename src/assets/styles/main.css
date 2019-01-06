@@ -1,0 +1,16 @@
+@import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "./generic/box-sizing.css";
+@import "./generic/reset.css";
+@import "./generic/normalize.css";
+@import "./generic/colors.css";
+@import "./generic/variables.css";
+@import "./generic/mixins.css";
+@import "./generic/typography.css";
+@import "./generic/scaffolding.css";
+@import "./elements/buttons.css";
+@import "./elements/lists.css";
+@import "./utilities/classes.css";
+
+body {
+  background: $c-neutral-gray-l;
+}
